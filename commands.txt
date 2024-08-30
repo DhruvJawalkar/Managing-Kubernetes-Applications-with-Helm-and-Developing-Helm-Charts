@@ -1,0 +1,55 @@
+Helm install wordpress
+Helm upgrade wordpress
+Helm rollback wordpress
+Helm uninstall wordpress
+
+Helm
+Helm get --help
+helm get -h
+
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm search repo bitnami
+helm repo update
+helm install bitnami/mysql --generate-name
+helm list
+helm uninstall mysql-1612624192
+helm status mysql-1612624192
+
+Helm install [release-name] [chart-name]
+Helm install my-site bitnami/wordpress
+
+Helm --help
+Helm repo --help
+Helm repo update --help
+Helm repo remove Hashicorp
+
+Helm search hub wordpress
+
+Helm repo add bitnami https:///charts.bitnami.com///bitnami
+Helm install my-release bitnami/wordpress
+Helm list
+Helm uninstall my-release
+
+Helm repo
+Helm repo list
+Helm repo update
+
+Helm install my-release bitnami/wordpress
+Helm install --set wordpressBlogName="Helm Tutorials" --set wordpressEmail="john@example.com" my-release bitnami/wordpress
+Helm install --values custom-values.yaml my-release bitnami/wordpress
+Helm pull bitnami/wordpress
+Helm pull --untar bitnami/wordpress
+Ls wordpress
+Helm install my-release ./wordpress
+
+Helm install my-site bitnami/wordpress
+Helm install my-SECOND-site bitnami/wordpress
+Helm install nginx-release bitnami/nginx --version 7.1.0
+Helm upgrade nginx-release bitnami/nginx
+Helm list
+Helm history nginx-release
+Helm rollback nginx-release 1
+Helm history nginx-release
+Helm upgrade wordpress-release bitnami/wordpress
+helm upgrade dazzling-web bitnami/nginx --version 13.1.0
+helm rollback dazzling-web 3
